@@ -1,0 +1,135 @@
+styles.css
+
+body {
+    background-color: #ffffff;
+    color: #3d106d;
+    font-family: Arial, sans-serif; /* Une police propre sans empattements */
+    margin: 0;                 /* supprime les marges par défaut du navigateur */
+    padding: 20px;             /* espace sur les bords */
+    line-height: 1.6;          /* lisibilité du texte */
+}
+
+h1 {
+    border-bottom: 2px solid #fd7301; /* ligne orange sous le titre */
+    padding-bottom: 10px;
+    text-transform: uppercase;        /* Titre en majuscules */
+    letter-spacing: 2px;              /* Espace entre les lettres */
+}
+
+p {
+    background-color: #fd7301; /* fond orange */
+    color: white;              /* Texte blanc */
+    padding: 15px;             /* Espace entre le texte et le bord du fond orange */
+    border-radius: 8px;        /* Arrondit les angles du bloc */
+}
+
+
+/* adaptation */
+img, video, canvas {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* style bandeau de navigation */
+header {
+    background-color: #3d106d; /* violet image */
+    padding: 5px 0;
+    width: 100%;
+}
+
+.header-container {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; /* Espace entre le logo et le menu */
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Style de la liste de liens */
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-left: 25px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+nav a.active, nav a:hover {
+    color: #fd7301; /* orange image */
+}
+
+/* bouton orange spécifique */
+.btn-billetterie {
+    background-color: #fd7301;
+    padding: 8px 15px;
+    border-radius: 4px;
+    color: white !important; 
+}
+
+.btn-billetterie:hover {
+    background-color: #e66700;
+}
+
+
+.grid-artistes {
+    display: grid;
+    
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; /* Espace entre les images */
+    max-width: 900px; /* On réduit un peu la largeur totale */
+    margin: 40px auto; 
+}
+
+.image-container {
+    width: 100%;
+    height: 200px; /* Hauteur ajustée pour 3 colonnes */
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.artiste img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.artiste:hover img {
+    transform: scale(1.1);
+}
+
+.nom-artiste {
+    color: #3d106d;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    font-family: sans-serif;
+}
+
+
+.form-contact {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.form-contact input, .form-contact textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}

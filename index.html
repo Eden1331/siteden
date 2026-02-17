@@ -18,15 +18,20 @@
 <body>
 
     <header>
-        <nav>
-            <img src="logo-meteopop.png" alt="Logo Meteopop">
-            <ul>
-                <li><a href="#presentation">Présentation</a></li>
-                <li><a href="#programmation">Programmation</a></li>
-                <li><a href="#infos-pratiques">Infos Pratiques</a></li>
-                <li><a href="billetterie.html">Billetterie</a></li>
-            </ul>
-        </nav>
+  <div class="header-container">
+    <div class="logo">
+      <img src="logo-meteopop.png" alt="Logo">
+</div>
+    
+    <nav>
+      <ul>
+        <li><a href="#">La prog'</a></li>
+        <li><a href="#" class="active">Infos pratiques</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#" class="btn-billetterie">Billetterie</a></li>
+      </ul>
+    </nav>
+  </div>
     </header>
 
     <main>
@@ -47,38 +52,45 @@
     <h2>Découvre la Programmation 2026</h2>
     
     <div class="grid-programmation">
-        <div class="artiste-card">
-            <img src="billie-eilish.jpg" alt="Billie Eilish">
-            <div class="artiste-nom">Billie Eilish</div>
-        </div>
-
-        <div class="artiste-card">
-            <img src="stromae.jpg" alt="Stromae">
-            <div class="artiste-nom">Stromae</div>
-        </div>
-
-        <div class="artiste-card">
-            <img src="riles.jpg" alt="Riles">
-            <div class="artiste-nom">Riles</div>
-        </div>
-        
-        <div class="artiste-card">
-            <img src="louane.jpg" alt="Louane">
-            <div class="artiste-nom">Louane</div>
-        </div>
-
-        <div class="artiste-card">
-            <img src="damso.jpg" alt="Damso">
-            <div class="artiste-nom">Damso</div>
-        </div>
-
-        <div class="artiste-card">
-            <img src="gesaffelstein.jpeg" alt="Gesaffelstein">
-            <div class="artiste-nom">Gesaffelstein</div>
-        </div>
 
 
-        </div>
+        <div class="grid-artistes">
+            <div class="artiste">
+                <div class="image-container"><img src="billie-eilish.jpg" alt="Artiste 1"></div>
+        <p class="nom-artiste">Billie Eilish</p>
+            </div>
+    
+    
+            <div class="artiste">
+                <div class="image-container"><img src="stromae.jpg" alt="Artiste 2"></div>
+        <p class="nom-artiste">Stromae</p>
+            </div>
+
+
+        <div class="artiste">
+            <div class="image-container"><img src="riles.jpg" alt="Artiste 3"></div>
+        <p class="nom-artiste">Riles</p>
+            </div>
+
+        <div class="artiste">
+            <div class="image-container"><img src="damso.jpg" alt="Artiste 4"></div>
+        <p class="nom-artiste">Damso</p>
+            </div>
+
+
+        <div class="artiste">
+            <div class="image-container"><img src="gesaffelstein.jpeg" alt="Artiste 5"></div>
+        <p class="nom-artiste">Gesaffelstein</p>
+
+            </div>
+
+        <div class="artiste">
+            <div class="image-container"><img src="louane.jpg" alt="Artiste 6"></div>
+        <p class="nom-artiste">Louane</p>
+            </div>
+
+
+    </div>
 
     <div class="center-btn">
         <a href="#" class="btn-prog">Toute la prog'</a>
@@ -102,6 +114,50 @@
         <p><a href="mailto:contact@meteopop.com">Nous contacter</a></p>
         <p>&copy; 2026 Festival Meteopop - Tous droits réservés.</p>
     </footer>
+
+<section class="container">
+    <h1>Contactez-nous</h1>
+    <form class="form-contact">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" rows="5" placeholder="Votre message..."></textarea>
+
+        <button type="button" class="btn-billetterie">Envoyer</button>
+    </form>
+</section>
+
+<section class="container">
+    <h1>Billetterie</h1>
+    <div class="tarifs-grid">
+        <div class="tarif-card">
+            <h3>Pass 1 Jour</h3>
+            <p class="prix">45€</p>
+        </div>
+        <div class="tarif-card">
+            <h3>Pass 2 Jours</h3>
+            <p class="prix">80€</p>
+        </div>
+        <div class="tarif-card">
+            <h3>Pass 3 Jours</h3>
+            <p class="prix">110€</p>
+        </div>
+    </div>
+</section>
+
+<nav>
+  <ul>
+    <li><a href="programmation.html">La prog'</a></li>
+    <li><a href="index.html">Infos pratiques</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="billetterie.html" class="btn-billetterie">Billetterie</a></li>
+  </ul>
+</nav>
+
 
 </body>
 </html>

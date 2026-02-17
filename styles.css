@@ -1,0 +1,43 @@
+styles.css
+
+/* Style appliqué à toute la page */
+body {
+    background-color: #ffffff; /* Fond blanc */
+    color: #3d106d;            /* Texte violet par défaut */
+    font-family: Arial, sans-serif; /* Une police propre sans empattements */
+    margin: 0;                 /* Supprime les marges par défaut du navigateur */
+    padding: 20px;             /* Ajoute un peu d'espace sur les bords */
+    line-height: 1.6;          /* Améliore la lisibilité du texte */
+}
+
+h1 {
+    border-bottom: 2px solid #fd7301; /* Une ligne orange sous le titre */
+    padding-bottom: 10px;
+    text-transform: uppercase;        /* Titre en majuscules */
+    letter-spacing: 2px;              /* Espacement entre les lettres */
+}
+
+p {
+    background-color: #fd7301; /* Le fond orange demandé */
+    color: white;              /* Texte blanc pour que ce soit lisible sur l'orange */
+    padding: 15px;             /* Espace entre le texte et le bord du fond orange */
+    border-radius: 8px;        /* Arrondit les angles du bloc */
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1); /* Une petite ombre légère */
+}
+
+
+/* On s'assure que les éléments s'adaptent */
+img, video, canvas {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Optionnel : Si l'écran est petit (mobile), on réduit la taille du titre */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    body {
+        padding: 10px;
+    }
+}
